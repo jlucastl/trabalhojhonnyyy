@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist - Funk</title>
+    <link rel="stylesheet" href="css_playlist/funk_playlist.css">
+    <link rel="icon" href="/src/logo.planeta.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header2">
+        <nav>
+            <div class="ICONE_VOLTAR">
+                <a href="/index.html">
+                <span class="material-symbols-outlined">home</span>
+                </a>
+            </div>
+            <h1>Funk</h1>
+            <div class="LOGO">
+                <img src="/src/logo.planeta.png" alt="LOGO">
+            </div>
+            <div class="MENU">
+                <button onclick="abrirMenu()"><span class="material-symbols-outlined">menu</span></button>
+                <div id="open">
+                    <li>
+                        <ul><label>Tema Escuro </label><input onclick="temaEscuro()" type="checkbox"></ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <div class="main1">
+        <div class="img_funk">
+            <img src="src_playlist/funk.jpg" alt="">
+        </div>
+<div class="AUDIO_PLAYER">
+    <audio id="audio" preload="auto" tabindex="0" controls="">
+        <source url="https://www.youtube.com/watch?v=W4I3wm7vMTo&list=PLcbqoj6PmK64QJxqeNpO4CVN5ROB-5Jvb">
+    </audio>
+</div>
+    <ul id="playlist">
+        <li class="active"></li>
+        <li><a href="musicas_funk/MTG_NA_IMAGINAÇÃO.mp3">Livinho - MTG NA IMAGINAÇÃO</a></li>
+        <li><a href="musicas_funk/Observando_Essa_Salada.mp3">MC Cebezinho - Observado Essa Salada</a></li>
+        <li><a href="musicas_funk/Malvadinho.mp3">MC Luuky - Malvadinho 😈</a></li>
+        <li><a href="musicas_funk/Ô NOVINHA_BROTA_NO_BAILE_DO_PANTA.mp3"> MC Nego Trufa - Ô Novinha Brota No Baile Do Panta</a></li>
+        <li><a href="musicas_funk/Barbie.mp3">MC Tuto - Barbie</a></li>
+    </ul>
+</div>
+</main>
+<footer>
+    <div class="ATALHOS">
+        <h1>Atalhos</h1>
+        <a href="/index.html"><p>Página Inicial</p></a>
+        <a href="/pag_sec/generos.html"><p>Gêneros</p></a>
+        <a href="/pag_sec/forro.html"><p>Forró</p></a>
+        <a href="/pag_sec/mpb.html"><p>MPB</p></a>
+        <a href="/pag_sec/samba.html"><p>Samba</p></a>
+        <a href="/pag_sec/bossa_nova.html"><p>Bossa Nova</p></a>
+    </div>
+    <div class="CONTATOS">
+        <h1>Contatos</h1>
+        <p>Email: <span>joao.teixeira07@aluno.ifce.edu.br</span></p>
+    </div>
+</footer>
+    <script src="js_playlist/js_playlist.js">
+    </script>
+</body>
+</html>

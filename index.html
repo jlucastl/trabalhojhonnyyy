@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho jhonny</title>
+    <link rel="icon" href="src/logo.planeta.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+      <nav>
+
+
+        <div class="LOGO">
+            <img src="src/logo.planeta.png" alt="LOGO">
+        </div>
+        
+
+          <li>
+
+            <ul class="DROPDOWN">
+              <a href="pag_sec/generos.html"><button id="GENEROS_BUTTON"><p> GÊNEROS </p><i class="material-symbols-outlined">arrow_drop_down</i> </button></a>
+              <div class="DROPDOWN_MENU">
+                <a href="pag_sec/bossa_nova.html">Bossa Nova</a>
+                <a href="pag_sec/mpb.html">Música Popular Brasileira</a>
+                <a href="pag_sec/forro.html">Forró</a>
+                <a href="pag_sec/funk.html">Funk</a>
+                <a href="pag_sec/samba.html">Samba</a>
+              </div>
+            </ul>
+            
+          </li>
+
+          <div class="MENU">
+            <button onclick="abrirMenu()"><span class="material-symbols-outlined">
+              menu
+            </span></button>
+            <div id="open">
+              <li>
+                <ul><label>Tema Escuro</label> <input onclick="temaEscuro()" type="checkbox" ></ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <a id="LINK_TOPO" href="#">&#9650;</a>
+
+    <main>
+      <section class="CONVIDACAO">
+        <div class="CONTAINER_CONVIDATIVA">
+          <h1>Aproveite o melhor da musica brasileira!</h1>
+          <p>Explore os mais diferentes gêneros musicais brasileiros</p>
+          <button><a href="pag_sec/generos.html">Descobrir Já</a></button>
+        </div>
+        <div class="IMAGEM_CONV">
+      <div id="SOBREPOR_DSM">
+        <div id="DSM">
+          <img src="src/o_descobridor_dos_sete_mares.jpg" alt="O o_descobridor_dos_sete_mares" title="o_descobridor_dos_sete_mares">
+        </div>
+        <div id="SOBREPOR_CTL">
+        <div id="CDE">
+          <img src="src/Milton_Nascimento__Clube_da_Esquina.jpg" alt="Clube_da_Esquina" title="Clube_da_Esquina">
+      </div>
+      
+      <div id="CTL">
+        <img src="src/cartola.jpg" alt="cartola" title="cartola">
+      </div>
+    </div>
+    </div>
+      </div>
+
+      </section>
+
+      <section class="CONTEUDO">
+        <div class="CONTEUDO_TEXTO">
+          <h1>Escute playlists feitas para você!</h1>
+          <p>5 playlists de gêneros diferentes de 5 músicas para curtir o ritmo brasileiro</p>
+        </div>
+        <div class="PLAYLISTS">
+          <li id="LISTA_A">
+            <ul id="FUNK"><a href="pag_sec/playlists/funk_playlist.html"><img src="pag_sec/playlists/src_playlist/funk.jpg" alt="Funk Playlist"></a></ul>
+            <ul id="MPB"><a href="pag_sec/playlists/mpb_playlist.html"><img src="pag_sec/playlists/src_playlist/MPB.jpg" alt="MPB Playlist"></a></ul>
+            <ul id="SAMBA"><a href="pag_sec/playlists/samba_playlist.html"><img src="pag_sec/playlists/src_playlist/samba.jpg" alt="Samba Playlist"></a></ul>
+          </li>
+        </div>
+      </section>
+      <section class="CONTEUDO_VERTICAL">
+        <div class="PLAYLIST_VERTICAL">
+          <li id="LISTA_A">
+            <ul id="FUNK"><a href="pag_sec/funk.html"><img src="pag_sec/playlists/src_playlist/funk.jpg" alt="Funk"></a></ul>
+            <ul id="MPB"><a href="pag_sec/mpb.html"><img src="pag_sec/playlists/src_playlist/MPB.jpg" alt=""></a></ul>
+          </li>
+          <li id="LISTA_B">
+            <ul id="SAMBA"><a href="pag_sec/playlists/samba_playlist.html"><img src="pag_sec/playlists/src_playlist/samba.jpg" alt="Samba Playlist"></a></ul>
+          </li>
+        </div>
+      </section>
+  </main>
+    <footer>
+      <li id="REDES_SOCIAIS"><h1> Redes Sociais </h1>
+        <ul><a href="https://www.instagram.com/jlucas.tl/" target="_blank"><span>Instagram</span></a></ul>
+        <ul><a href="https://github.com/jlucastl" target="_blank"><span>GitHub</span></a></ul>
+      </li>
+      </li>
+      <li id="CONTATOS"><h1> Contatos </h1>
+        <ul><span>Email:</span> joao.teixeira07@aluno.ifce.edu.br</ul>
+        <ul><span>Whatsapp:</span> (88) 98130-1074</ul>
+      </li>
+    </footer>
+
+    <script src="js/index.js">
+    </script>
+</body>
+</html>

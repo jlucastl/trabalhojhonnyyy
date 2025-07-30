@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+:root {
+    --cor-primaria: #ebeaea;
+    --cor-secundaria: #3b8952;
+    --cor-tercearia: #0f684b;
+    --cor-quarta: #042527;
+    --cor-quinta: #1c232e;
+    --cor-sexta: #001f36;
+    --cor-text: #181717;
+
+    --color-1:  #000000;
+    --color-2: #1f1f1f;
+    --color-3: #3f3f3f;
+    --color-4: #5e5e5e;
+    --color-5: #7d7d7d;
+
+    --cor-primaria-tEscuro: #1f1f1f;
+    --cor-secundaria-tEscuro: #104dcf;
+    --cor-tercearia-tEscuro: #3f3f3f;
+}
+body {
+    background-color: var(--cor-primaria);
+}
+/* TEMA ESCURO ------------------------------*/
+body.tema_escuro {
+    background-color: var(--cor-escuro);
+}
+.tema_escuro {
+    --cor-escuro: rgb(29, 28, 28);
+    --cor-clara: #ebeaea;
+  }
+
+body.tema_escuro header {
+    background-color: rgba(0, 0, 0, 0);
+}
+body.tema_escuro header.rolagem {
+    background-color: #1f1f1fee;
+}
+body.tema_escuro header span {
+    color: #fff;
+}
+body.tema_escuro header span:hover {
+    color: var(--cor-secundaria-tEscuro);
+}
+body.tema_escuro #open {
+    background-color: var(--cor-escuro);
+    color: #fff;
+}
+body.tema_escuro h1 {
+    color: #fff;
+    font-weight: bold;
+}
+body.tema_escuro header h1 {
+    color: var(--color-2);
+}
+body.tema_escuro h3 {
+    color: #fff;
+}
+body.tema_escuro .SECAO_1 {
+    background-color: var(--color-2);
+    box-shadow: -9px 11px 1px rgba(56, 56, 56, 0.349);
+}
+body.tema_escuro .TEXTO button {
+    font-weight: 50;
+    background-color: var(--cor-secundaria-tEscuro);
+}
+body.tema_escuro main ul {
+    box-shadow: 7px 7px 1px #333333;
+}
+body.tema_escuro .SOBRE p {
+    color: #fff;
+}
+body.tema_escuro .IMPORTANCIA_CULTURAL img, body.tema_escuro .DIVERSIDADE img {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+body.tema_escuro .DIVISAO {
+    background-color: #fff;
+}
+body.tema_escuro footer p {
+    color: #fff;
+}
+body.tema_escuro footer {
+    box-shadow: 1px -10px 10px rgba(2, 2, 2, 0.226);
+}
+body.tema_escuro footer span {
+    color: var(--cor-secundaria-tEscuro);
+}
+body.tema_escuro .ATALHOS p:hover  {
+    text-decoration: underline;
+}
+body.tema_escuro .CONTATOS span {
+    color: var(--cor-secundaria-tEscuro);
+}
+
+/* HEADER -------------------------------------------------*/
+header {
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 15px black;
+    padding: 30px;
+    transition: .7s ease;
+    position: fixed;
+    z-index: 2;
+    width: 97%;
+    top: 0;
+    left: 0;
+}
+header.rolagem {
+    position: fixed;
+    padding: 10px 30px;
+    background-color: #ffffffef;
+}
+header.rolagem span {
+    color: var(--color-2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    color: var(--color-2);
+    position: absolute;
+    background: greenyellow;
+    padding: 5px;
+    border-radius: 7px;
+    left: 440px;
+    font-style: italic;
+    font-size: 24px;
+    pointer-events: none;
+}
+.LOGO img{
+    display: flex;
+    margin-top: 10px;
+    width: 80px;
+    transition: .2s;
+    filter: grayscale(40%);
+    transition: transform .3s ease;
+}
+.LOGO img:hover{
+    transform: scale(1.2);
+}
+.ICONE_VOLTAR a{
+    font-size: 30px;
+    text-decoration: none;
+}
+.ICONE_VOLTAR span {
+    font-size: 60px;
+    color: var(--color-2);
+    transition: transform .2s ease;
+}
+.ICONE_VOLTAR span:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.2);
+}
+.MENU span {
+    font-size: 60px;
+    color: var(--color-2);
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+.MENU span:hover {
+    transform: scale(1.2);
+    color: var(--cor-secundaria);
+}
+.MENU button {
+    border: none;
+    background-color: transparent;
+}
+#open {
+    list-style: none;
+    display: none;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 125px;
+    right: 20px;
+}
+/* MAIN --------------------------------- */
+.BACKGROUND {
+  background-image: url(/pag_sec/src_sec/ben1963capa.jpg);
+  background-size: cover; 
+  position: absolute;
+  top: 150px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.TEXTO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 100px;
+    color: rgb(255, 255, 255);
+    margin-right: 3vw;
+}
+.TEXTO h1 {
+    margin-top: 120px;
+    font-size: 50px;
+}
+.TEXTO h1::after {
+    content: '';
+    display: block;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(196, 196, 196));
+    width: 100%;
+    height: 4%;
+}
+.TEXTO h3 {
+    font-weight: 500;
+    font-size: 25px;
+    max-width: 40vw;
+}
+.TEXTO button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: var(--cor-secundaria);
+    border-radius: 3px;
+    margin-top: 30px;
+    transition: .2s ease;
+    box-shadow: 0px 0px 10px #055c1d;
+}
+.TEXTO button a {
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+}
+.TEXTO button:hover {
+    box-shadow: 0px 0px 15px #0c5521;
+}
+
+.SOBRE {
+    margin-top: 70vw;
+    display: flex;
+    justify-content: space-around;
+}
+.IMPORTANCIA_CULTURAL, .DIVERSIDADE {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+}
+.IMPORTANCIA_CULTURAL {
+    flex-direction: column-reverse;
+}
+
+.IMPORTANCIA_CULTURAL img, .DIVERSIDADE img {
+    width: 30vw;
+    height: 17vw;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 2rem;
+}
+.DIVISAO {
+    background-color: rgb(0, 0, 0);
+    width: .2vw;
+}
+
+
+/* FOOTER ---------------------------------*/
+footer {
+    box-shadow: 1px -10px 10px rgba(58, 58, 58, 0.11);
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    gap: 450px;
+    margin-top: 13vw;
+}
+footer h1{
+    color: var(--color-2);
+    font-size: 25px;
+    pointer-events: none;
+}
+footer p {
+    color: var(--color-2);
+    font-size: 15px;
+}
+footer span {
+    color: var(--cor-secundaria);
+    font-weight: 500;
+}
+footer a {
+    text-decoration: none;
+}
+.ATALHOS {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.ATALHOS a:hover {
+    text-decoration: underline;
+    color: var(--color-2);
+}
+.CONTATOS {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+@media (max-width: 450px) {
+    header {
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+        transition: all .6s ease;
+    }
+    .ICONE_VOLTAR span {
+        font-size: 50px;
+        }
+    .MENU span {
+        margin-right: 3vw;
+        font-size: 50px;
+        }
+    .LOGO img {
+        margin: 0 auto;
+        width: 70px;
+        }
+    header.rolagem {
+        padding: 0px 3px;
+    }
+    header h1 {
+        display: none;
+    }
+    nav {
+        justify-content: space-around;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .TEXTO{
+        margin: 0 auto;
+        gap: 10vw;
+        backdrop-filter: blur(2px);
+        position: absolute;
+        top: 50vw;
+    }
+    .TEXTO h1{
+        margin: 0 auto;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+    .TEXTO h1::after {
+        content: '';
+        display: block;
+        background: linear-gradient(45deg, rgb(255, 255, 255), rgb(196, 196, 196));
+        width: 100%;
+        height: 1vw;
+    }
+    .TEXTO h3 {
+        font-size: 15px;
+        max-width: 85%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .BACKGROUND {
+    background-image: url(/pag_sec/src_sec/ben_vertical.jpg);
+    top: 17vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100% 0px;
+    }
+    .SOBRE {
+        margin-top: 40vw;
+        flex-direction: column;
+    }
+    .DIVISAO {
+        flex-direction: row;
+        width: 100%;
+        clip-path: inset(0px 15px);
+        height: 5px;
+    }
+    .IMPORTANCIA_CULTURAL, .DIVERSIDADE {
+        margin: 22px;
+    }
+    .IMPORTANCIA_CULTURAL img, .DIVERSIDADE img {
+        width: 80vw;
+        height: 45vw;
+    }
+    
+    footer {
+        display: block;
+        padding: 20px;
+        justify-content: start;
+        margin: 0;
+        margin-top: 30vw;
+    }
+    .ATALHOS {
+        text-align: center;
+    }
+    .CONTATOS{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (min-width: 451px) and (max-width: 1510px) {
+    header {
+        width: 100%;
+        padding: 15px 0px;
+    }
+    header.rolagem {
+        padding: 0px 13px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    header h1 {
+        display: none;
+    }
+    
+    .BACKGROUND {
+        background-image: url(/pag_sec/src_sec/ben1963capa.jpg);
+        top: 6rem;
+        background-position: 35%;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 15vw 0px;
+    }
+    .TEXTO {
+        backdrop-filter: blur(6px);
+    }
+    .TEXTO h1{
+        margin-top: 3vw;
+    }
+    .TEXTO h3{
+        max-width: 55vw;
+    }
+    .SOBRE {
+        margin-top: 22vw;
+    }
+    .IMPORTANCIA_CULTURAL, .DIVERSIDADE {
+        max-width: 40vw;
+    }
+
+    footer {
+        overflow-x: hidden;
+        margin: 0 auto; 
+        margin-top: 11vw;
+        justify-content: space-around;
+        gap: 0;
+    }
+}

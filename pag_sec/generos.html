@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gêneros Músicais</title>
+    <link rel="icon" href="/src/logo.planeta.png">
+    <link rel="stylesheet" href="css_sec/generos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header class="header2">
+        <nav>
+            <div class="ICONE_VOLTAR">
+                <a href="/index.html">
+                <span class="material-symbols-outlined">home</span>
+                </a>
+            </div>
+            <h1>Gêneros Musicais Brasileiros</h1>
+            <div class="LOGO">
+                <img src="/src/logo.planeta.png" alt="LOGO">
+            </div>
+            <div class="MENU">
+                <button onclick="abrirMenu()"><span class="material-symbols-outlined">menu</span></button>
+                <div id="open">
+                    <li>
+                        <ul><label>Tema Escuro </label><input onclick="temaEscuro()" type="checkbox"></ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Explore os principais gêneros musicais brasileiros</h1>
+<div class="TODAS_LISTAS">
+    <div class="LISTA">
+        <li>
+            <a href="funk.html"><ul id="BLOCO_1"><div id="IR_FUNK"><span>Funk</span><i class="material-symbols-outlined">double_arrow</i></div>
+                <img src="src_sec/MC_IG.png" alt="MC_IG"></ul></a>
+
+            <a href="mpb.html"><ul id="BLOCO_2"><div id="IR_MPB"><span>MPB</span><i class="material-symbols-outlined">double_arrow</i></div>
+                <img src="src_sec/Chico_buarque.png" alt="Chico_Buarque"></ul></a>
+            
+            <a href="samba.html"><ul id="BLOCO_3"><div id="IR_SAMBA"><span>Samba</span><i class="material-symbols-outlined">double_arrow</i></div>
+                <img src="src_sec/Zeca_pagodinho.png" alt="Zeca_pagodinho"></ul></a>
+        </li>
+    </div>
+
+</div>
+    <div class="LISTAS_VERTICAL">
+        <li>
+            <ul id="BLOCO_1"><a href="funk.html">Funk</a></ul>
+            <ul id="BLOCO_2"><a href="mpb.html">MPB</a></ul>
+            <ul id="BLOCO_3"><a href="samba.html">Samba</a></ul>
+        </li>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="ATALHOS">
+            <h1>Atalhos</h1>
+            <a href="/index.html"><p>Página Inicial</p></a>
+            <a href="/pag_sec/funk.html"><p>Funk</p></a>
+            <a href="/pag_sec/forro.html"><p>Forró</p></a>
+            <a href="/pag_sec/mpb.html"><p>MPB</p></a>
+            <a href="/pag_sec/samba.html"><p>Samba</p></a>
+            <a href="/pag_sec/bossa_nova.html"><p>Bossa Nova</p></a>
+        </div>
+        <div class="CONTATOS">
+            <h1>Contatos</h1>
+            <p>Email: <span>joao.teixeira07@aluno.ifce.edu.br</span></p>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>

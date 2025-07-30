@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+:root {
+    --cor-primaria: #ebeaea;
+    --cor-secundaria: #3b8952;
+    --cor-tercearia: #0f684b;
+    --cor-quarta: #042527;
+    --cor-quinta: #1c232e;
+    --cor-sexta: #001f36;
+    --cor-text: #181717;
+
+    --color-1:  #000000;
+    --color-2: #1f1f1f;
+    --color-3: #3f3f3f;
+    --color-4: #5e5e5e;
+    --color-5: #7d7d7d;
+
+    --cor-primaria-tEscuro: #1f1f1f;
+    --cor-secundaria-tEscuro: #104dcf;
+    --cor-tercearia-tEscuro: #3f3f3f;
+}
+body {
+    background-color: var(--cor-primaria);
+}
+/* TEMA ESCURO --------------------------- */
+.tema_escuro {
+    --cor-escuro: rgb(29, 28, 28);
+    --cor-clara: #ebeaea;
+}
+body.tema_escuro {
+    background-color: var(--cor-escuro);
+}
+body.tema_escuro header {
+    background-color: var(--color-2);
+    box-shadow: 1px 5px 15px rgba(2, 2, 2, 0.226);
+}
+body.tema_escuro header.rolagem {
+    background-color: #1f1f1ffb;
+}
+body.tema_escuro header span {
+    color: #fff;
+}
+body.tema_escuro #open {
+    background-color: var(--cor-escuro);
+    color: #fff;
+}
+body.tema_escuro h1 {
+    color: #fff;
+}
+body.tema_escuro main ul {
+    box-shadow: 0px 0px 15px black;
+}
+body.tema_escuro footer p {
+    color: #fff;
+}
+body.tema_escuro footer {
+    box-shadow: 1px -10px 10px rgba(2, 2, 2, 0.226);
+}
+body.tema_escuro .ATALHOS p:hover  {
+    text-decoration: underline;
+}
+body.tema_escuro .CONTATOS span {
+    color: var(--cor-secundaria-tEscuro);
+}
+
+/* HEADER -------------------------------------------------*/
+header {
+    background-color: #f5f5f5;
+    box-shadow: 1px 5px 15px rgba(87, 87, 87, 0.205);
+    padding: 30px;
+    transition: .7s ease;
+    position: fixed;
+    z-index: 2;
+    width: 97%;
+    top: 0;
+    left: 0;
+}
+header.rolagem {
+    position: fixed;
+    padding: 10px 30px;
+    background-color: #f5f5f5f3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    color: white;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(151, 151, 151), rgb(66, 66, 66));
+    padding: 5px;
+    border-radius: 7px;
+    left: 310px;
+    font-style: italic;
+    font-size: 24px;
+    pointer-events: none;
+}
+.LOGO img{
+    display: flex;
+    margin-top: 10px;
+    width: 80px;
+    transition: .2s;
+    filter: grayscale(40%);
+    transition: transform .3s ease;
+}
+.LOGO img:hover{
+  transform: scale(1.2);
+}
+.ICONE_VOLTAR a{
+    font-size: 30px;
+    text-decoration: none;
+}
+.ICONE_VOLTAR span {
+    font-size: 60px;
+    color: var(--color-2);
+    transition: transform .2s ease;
+}
+.ICONE_VOLTAR span:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.2);
+}
+.MENU span {
+    font-size: 60px;
+    color: var(--color-2);
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+.MENU span:hover {
+    transform: scale(1.2);
+    color: var(--cor-secundaria);
+}
+.MENU button {
+    border: none;
+    background-color: transparent;
+}
+#open {
+    list-style: none;
+    display: none;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 125px;
+    right: 20px;
+}
+/* MAIN ---------------------------------------------*/
+
+/* ORGANIZAÇÂO DO CONTEÚDO MOSTRADO -------------------- */
+main {
+    text-align: center;
+    margin-top: 250px;
+}
+main h1 {
+    font-size: 38px;
+    pointer-events: none;
+}
+
+main ul {
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgb(29, 29, 29);
+}
+main span {
+    color: var(--cor-text);
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+}
+
+/* ORGANIZAÇÃO DAS LISTAS ------------------------ */
+.LISTA {
+    margin-top: 120px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.LISTA li {
+    display: flex;
+    gap: 300px;
+}
+
+.LISTA ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 22px;
+    width: 330px;
+    height: 400px;
+    transition: .2s ease;
+}
+.LISTA ul:hover {
+    transform: scale(1.1);
+}
+
+/* BARRA DE DIRECIONAMENTO ------------------- */
+#IR_FUNK, #IR_MPB, #IR_SAMBA {
+    position: absolute;
+    width: 290px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    border-top: 7px solid rgb(43, 43, 43);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#IR_FUNK:hover, #IR_MPB:hover, #IR_SAMBA:hover {
+    padding: 25px 20px;
+    transition: .2s ease;
+}
+#IR_FUNK span, #IR_MPB span, #IR_SAMBA span {
+    color: #535353;
+    transition: transform .1s ease;
+}
+#IR_FUNK i, #IR_MPB i, #IR_SAMBA i {
+    font-size: 40px;
+    color: #535353;
+    transition: transform .1s ease;
+}
+#IR_FUNK i:hover, #IR_MPB i:hover, #IR_SAMBA i:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.3);
+}
+
+/* ORGANIZAÇÃO DOS BLOCOS ------------------------- */
+
+/* BLOCO FUNK -------------------------------- */
+#BLOCO_1 {
+    cursor: pointer;
+    transition: transform .3s ease;
+    background: radial-gradient(circle, rgb(209, 42, 153) 50%, rgb(158, 3, 107));
+}
+
+#BLOCO_1 img{
+    transition: .4s ease;
+    opacity: .5;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    clip-path: inset(0px 15px 50px 16px );
+    width: 360px;
+    margin-bottom: 37px;
+}
+#BLOCO_1:hover {
+    transition: all .4s ease;
+}
+
+#BLOCO_1:hover img {
+    transition: .4s ease;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    clip-path: inset(0px 15px 50px 16px );
+    display: flex;
+    position: absolute;
+    width: 360px;
+    opacity: .8;
+}
+/* BLOCO MPB --------------------------------------- */
+
+#BLOCO_2 {
+    cursor: pointer;
+    transition: transform .3s ease;
+    background: radial-gradient(circle, greenyellow 40%, rgb(128, 211, 3));
+}
+#BLOCO_2 img{
+    transition: .4s ease;
+    opacity: .5;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    clip-path: inset(0px 15px 50px 16px );
+    width: 360px;
+    margin-bottom: 3px;
+}
+#BLOCO_2:hover {
+    transition: all .2s ease;
+}
+
+#BLOCO_2:hover img {
+    transition: .2s ease-in-out;
+    mix-blend-mode: multiply;
+    filter: grayscale(60%);
+    clip-path: inset(0px 5px 0px 14px );
+    display: flex;
+    position: absolute;
+    width: 360px;
+    opacity: .8;
+    pointer-events: none;
+}
+
+/* BLOCO SAMBA -------------------------------- */
+#BLOCO_3 {
+    cursor: pointer;
+    transition: transform .3s ease;
+    background: radial-gradient(circle, rgb(189, 43, 43) 50%, rgb(129, 4, 4));
+}
+#BLOCO_3 img{
+    transition: .4s ease;
+    opacity: .5;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    clip-path: inset(0px 15px 35px 16px );
+    width: 360px;
+    margin-bottom: 37px;
+}
+#BLOCO_3:hover {
+    transition: all .4s ease;
+}
+#BLOCO_3:hover img {
+    transition: .2s ease-in-out;
+    mix-blend-mode: multiply;
+    filter: grayscale(60%);
+    clip-path: inset(0px 5px 53px 14px );
+    display: flex;
+    position: absolute;
+    width: 360px;
+    opacity: .8;
+    pointer-events: none;
+}
+
+/* REMOVER A LISTA CORRESPONDENTE A RESPONSIVIDADE PARA CELULARES ----------- */
+.LISTAS_VERTICAL {
+    display: none;
+}
+/* FOOTER ------------------------------------------------ */
+footer {
+    box-shadow: 1px -10px 10px rgba(58, 58, 58, 0.185);
+    margin-top: 250px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    gap: 450px;
+}
+footer h1{
+    color: var(--color-2);
+    font-size: 25px;
+    pointer-events: none;
+}
+footer p {
+    color: var(--color-2);
+    font-size: 15px;
+}
+footer span {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+footer a {
+    text-decoration: none;
+}
+
+/* CONTEÚDO DO RODAPÉ ---------------------------- */
+.ATALHOS {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.ATALHOS a:hover {
+    text-decoration: underline;
+    color: var(--color-2);
+}
+.CONTATOS {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* RESPONSIVIDADE PARA CELULARES ---------------------- */
+@media (max-width: 750px) {
+    header {
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+        transition: all .6s ease;
+        }
+    header h1 {
+        display: none;
+    }
+        .ICONE_VOLTAR span {
+            font-size: 50px;
+        }
+        .MENU span {
+            margin-right: 3vw;
+            font-size: 50px;
+        }
+        .LOGO img {
+            margin: 0 auto;
+            width: 70px;
+        }
+        header.rolagem {
+            padding: 0px 3px;
+        }
+        header.rolagem h1{
+            top: 28px;
+            left: 80px;
+            transition: all .6s ease;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            display: none;
+            font-size: 16px;
+            left: 80px;
+            top: 32px;
+        }
+        main h1{
+            margin: 0 auto;
+            font-size: 25px;
+            margin-bottom: 5vw;
+        }
+        main {
+            margin-top: 35vw;
+        }
+        .TODAS_LISTAS {
+            display: none;
+        }
+        .LISTAS_VERTICAL {
+            margin-top: 15vw;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .LISTAS_VERTICAL li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .LISTAS_VERTICAL ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            box-shadow: 5px 5px 1px black;
+        }
+        .LISTAS_VERTICAL a {
+            color: black;
+            font-weight: bold;
+        }
+        #BLOCO_1, #BLOCO_2, #BLOCO_3 {
+            padding: 35px;
+            width: 12rem;
+            box-shadow: 5px 5px 1px black;
+            font-size: 1.2rem;
+        }
+        #BLOCO_1 {
+            background: rgb(209, 42, 153);
+        }
+        #BLOCO_2 {
+            background: greenyellow;
+            margin: 0 auto;
+        }
+        #BLOCO_3 {
+            background: rgb(189, 43, 43);
+        }
+        footer {
+            display: block;
+            padding: 20px;
+            justify-content: start;
+            margin: 0;
+            margin-top: 90px;
+        }
+        .ATALHOS {
+            text-align: center;
+        }
+        .CONTATOS{
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+}
+
+/* RESPONSIVIDADE PARA TABLETS --------------------------- */
+@media (min-width: 751px) and (max-width: 1280px) {
+    header {
+        width: 100%;
+        padding: 15px 0px;
+    }
+    header.rolagem {
+        padding: 0px 13px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    header h1 {
+        display: none;
+    }
+    .TODAS_LISTAS {
+        display: flex;
+        margin-left: 3.2vw;
+    }
+    .TODAS_LISTAS li{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+#IR_FUNK, #IR_MPB, #IR_SAMBA {
+    width: 22.5rem;
+}
+
+    #BLOCO_1, #BLOCO_2, #BLOCO_3 {
+        width: 25rem;
+    }
+    #BLOCO_1 img, #BLOCO_2 img, #BLOCO_3 img {
+        width: 22rem;
+        clip-path: inset(0px 0px);
+    }
+    #BLOCO_1 {
+        background: rgb(209, 42, 153);
+    }
+    #BLOCO_2 {
+        background: greenyellow;
+        margin: 0 auto;
+    }
+    #BLOCO_3 {
+        background: rgb(189, 43, 43);
+    }
+    #BLOCO_1 a,#BLOCO_2 a,#BLOCO_3 a{
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #BLOCO_2 {
+        margin: 0 auto;
+    }
+    footer {
+        overflow-x: hidden;
+        margin: 0 auto; 
+        margin-top: 23vw;
+        justify-content: space-around;
+        gap: 0;
+    }
+}
