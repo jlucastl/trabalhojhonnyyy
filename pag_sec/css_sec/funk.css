@@ -70,6 +70,34 @@ body.tema_escuro .TEXTO button {
     font-weight: 500;
     background-color: var(--cor-secundaria-tEscuro);
 }
+
+
+body.tema_escuro .DENSENVOLVIMENTO_FUNK {
+    background-color: var(--cor-escuro);
+    box-shadow: 0px 0px 15px black;
+}
+body.tema_escuro .POPULARIZACAO_FUNK {
+    background-color: var(--cor-escuro);
+    box-shadow: 0px 0px 15px black;
+}
+body.tema_escuro .IMPORTANCIA_CULTURA {
+    background-color: var(--cor-escuro);
+    box-shadow: 0px 0px 15px black;
+}
+body.tema_escuro .DENSENVOLVIMENTO_FUNK p {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+}
+body.tema_escuro .POPULARIZACAO_FUNK p {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+}
+body.tema_escuro .IMPORTANCIA_CULTURA p {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+}
+
+
 body.tema_escuro main ul {
     box-shadow: 7px 7px 1px #333333;
 }
@@ -236,7 +264,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 .DENSENVOLVIMENTO_FUNK, .POPULARIZACAO_FUNK, .IMPORTANCIA_CULTURA {
     display: flex;
@@ -321,7 +349,7 @@ footer a {
 @media (max-width: 450px) {
     header {
     width: 100%;
-    padding: 5px;
+    padding: 5px 0px;
     align-items: center;
     transition: all .6s ease;
     }
@@ -337,7 +365,7 @@ footer a {
         width: 70px;
     }
     header.rolagem {
-        padding: 0px 3px;
+        padding: 3px 0px;
     }
     header.rolagem h1{
         top: 28px;
@@ -440,14 +468,14 @@ footer a {
     }
 }
 
-@media (min-width: 451px) and (max-width: 1280px) {
+@media (min-width: 451px) and (max-width: 1279px) {
     
     header {
         width: 100%;
         padding: 15px 0px;
     }
     header.rolagem {
-        padding: 0px 13px;
+        padding: 5px 0px;
     }
     nav {
         display: flex;
@@ -480,7 +508,7 @@ footer a {
         width: 90%;
         height: 100%;
         padding: 30px 0px;
-        margin-top: 30vw;
+        margin-top: 20vw;
         box-shadow: 0px 0px 10px rgb(194, 194, 194);
     }
     .TEXTO {
@@ -501,7 +529,6 @@ footer a {
         padding: 15px;
     }
     .SOBRE_FUNK {
-        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         gap: 5rem;
@@ -512,5 +539,51 @@ footer a {
         margin-top: 100px;
         justify-content: space-around;
         gap: 0;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1500px) and (min-height: 720px) and (max-height: 800px) {
+    header h1 {
+        left: 350px;
+    }
+    
+    .SECAO_1 {
+        margin-top: 18vw;
+        margin-left: 0;
+        margin-left: 2.5vw;
+        height: 30rem;
+        width: 100%;
+        max-width: 95%;
+        padding: 0;
+    }
+    .IMAGEM img {
+        width: 33rem;
+        height: 33rem;
+        top: 16.8vw;
+        right: 2rem;
+        border-radius: 2rem;
+    }
+    .TEXTO {
+        max-width: 50%;
+        display: flex;
+        text-align: justify;
+        gap: 50px;
+    }
+    .TEXTO h1 {
+        margin-top: 6rem;
+    }
+    .TEXTO button {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .SOBRE_FUNK {
+        margin-top: 10rem;
+    }
+    .DENSENVOLVIMENTO_FUNK, .POPULARIZACAO_FUNK, .IMPORTANCIA_CULTURA {
+        width: 23rem;
+    }
+    footer {
+        margin-top: 10rem;
     }
 }

@@ -282,12 +282,79 @@ footer a {
 @media (max-width: 750px) {
     header {
         width: 100%;
-        padding: 15px;
+        padding: 15px 0px;
+    }
+    header h1 {
+        display: none;
+    }
+    header.rolagem {
+        padding: 5px 0px;
     }
     nav {
         justify-content: space-around;
     }
+    .MENU span {
+        margin: 0 auto;
+    }
+    .main1 {
+        margin-top: 200px;
+        width: 100%;   
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .img_mpb img {
+        width: 100%;
+    }
+    .AUDIO_PLAYER audio{
+        width: 20rem;
+    }
+    #playlist {
+        width: 90vw;
+    }
 
+    footer {
+        display: block;
+        padding: 20px;
+        justify-content: start;
+        margin: 0;
+        margin-top: 90px;
+    }
+    .ATALHOS {
+        text-align: center;
+    }
+    .CONTATOS{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (min-width: 751px) and (max-width: 1500px) {
+    header {
+        width: 100%;
+        padding: 15px 0px;
+    }
+    header.rolagem {
+        padding: 5px 0px;
+    }
+    header h1 {
+        display: none;
+    }
+    nav {
+        justify-content: space-around;
+    }
+    .main1 {
+        width: 100%;
+    }
+    .img_mpb img {
+        width: 40vw;
+    }
+    .AUDIO_PLAYER audio{
+        width: 50vw;
+    }
+    #playlist {
+        width: 50vw;
+    }
     footer {
         overflow-x: hidden;
         margin: 0 auto; 
@@ -296,12 +363,11 @@ footer a {
         gap: 0;
     }
 }
-@media (min-width: 751px) and (max-width: 1024px) {
-    header {
-        width: 100%;
-        padding: 15px;
+@media (min-width: 1280px) and (max-width: 1500px) and (min-height: 720px) and (max-height: 800px) {
+    .main1 {
+        margin-top: 15vw;
     }
-    header h1 {
-        display: none;
+    nav {
+        justify-content: space-between;
     }
 }

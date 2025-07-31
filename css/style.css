@@ -107,10 +107,7 @@ body.tema_escuro .PLAYLISTS img {
 body.tema_escuro #CONTATOS {
   color: var(--cor-secundaria-tEscuro);
 }
-body.tema_escuro #LINK_TOPO.rolagem2{
-  color: #fff;
-  background-color: var(--cor-secundaria-tEscuro);
-}
+
 body.tema_escuro footer {
   box-shadow: 1px -10px 10px rgba(2, 2, 2, 0.192);
 }
@@ -289,20 +286,7 @@ header p{
 }
 
 /* BOTÃO QUE APARECE AO CHEGAR NO FIM DA PÁGINA ------- */
-#LINK_TOPO {
-    text-decoration: none;
-    color: transparent;
-    background-color: transparent;
-    padding: 10px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    transition: 1s;
-  }
-  #LINK_TOPO.rolagem2{
-    color: #042527;
-    background-color: #3b8952;
-}
+
 /*Convidação -------------------------------*/
 main {
   margin-top: 300px;
@@ -517,9 +501,6 @@ font-weight: 600;
   body.tema_escuro .PLAYLIST_VERTICAL img {
     box-shadow: 0px 0px 10px black;
   }
-  #LINK_TOPO {
-    display: none;
-  }
   body h1 {
     font-size: 23px;
   }
@@ -612,6 +593,9 @@ font-weight: 600;
     display: flex;
     gap: 20px;
   }
+  #LISTA_B {
+    justify-content: center;
+  }
   footer {
     margin-top: 10vw;
     padding: 30px 0;
@@ -626,16 +610,13 @@ font-weight: 600;
   }
 }
 /* RESPOSIVIDADE PARA TABLETS --------------------------- */
-@media (min-width: 801px) and (max-width: 1280px) {
+@media (min-width: 801px) and (max-width: 1279px) {
   body.tema_escuro .CONTAINER_CONVIDATIVA {
     background-color: var(--cor-escuro);
     box-shadow: 1px 1px 8px rgb(0, 0, 0);
   }
   body.tema_escuro .PLAYLIST_VERTICAL img {
     box-shadow: 0px 0px 10px black;
-  }
-  #LINK_TOPO {
-    display: none;
   }
   body h1 {
     font-size: 28px;
@@ -727,4 +708,21 @@ font-weight: 600;
   #CONTATOS ul {
     text-align: center;
   }
+}
+@media (min-width: 1280px) and (max-width: 1500px) and (min-height: 720px) and (max-height: 800px){
+.CONVIDACAO {
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+.IMAGEM_CONV {
+  margin: 0 auto;
+  margin-left: 50rem;
+}
+
+  .IMAGEM_CONV img {
+  width: 350px;
+}
+.CONTEUDO {
+  margin-left: 2rem;
+}
 }
