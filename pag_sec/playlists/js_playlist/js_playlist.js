@@ -31,10 +31,14 @@ inicio();
 			player.load();
 			player.play();			
 		}
+
+
 		window.addEventListener("scroll", function() {
 			let header = document.querySelector('.header2')
 			header.classList.toggle('rolagem', window.scrollY > 80)
 		})
+
+
 		function abrirMenu() {
 			let open = document.getElementById('open');
 		
@@ -45,6 +49,8 @@ inicio();
 				open.style.display = 'block'
 			}
 		}
+
+		
 		function temaEscuro() {
 			document.body.classList.toggle('tema_escuro')
 		}

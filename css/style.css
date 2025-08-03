@@ -509,11 +509,11 @@ font-weight: 600;
   }
   header {
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 0px;
     width: 100%;
   }
   header.rolagem {
-    padding: 0px 5px;
+    padding: 3px 0px;
   }
   nav {
     display: flex;
@@ -562,14 +562,13 @@ font-weight: 600;
     margin: 0;
     margin-top: 30%;
   }
+
   .CONTEUDO_TEXTO {
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     gap: 20px;
-  }
-  .CONTEUDO_TEXTO p {
-    margin-left: 5vw;
+    max-width: 95vw;
   }
   .PLAYLISTS {
     display: none;
@@ -607,6 +606,7 @@ font-weight: 600;
   }
   #CONTATOS ul {
     text-align: center;
+    overflow: hidden;
   }
 }
 /* RESPOSIVIDADE PARA TABLETS --------------------------- */
@@ -626,20 +626,19 @@ font-weight: 600;
   }
   header {
     margin: 0 auto;
-    padding: 15px;
+    padding: 15px 0px;
     width: 100%;
   }
   header.rolagem {
-    padding: 0px 10px;
+    padding: 5px 0px;
   }
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 30vw;
   }
-  .MENU span {
-    margin-right: 4vw;
-  }
+
   #open {
     left: 82vw;
   }

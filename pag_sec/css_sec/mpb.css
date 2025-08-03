@@ -103,17 +103,17 @@ body.tema_escuro .CONTATOS span {
 header {
     background-color: #f5f5f5;
     box-shadow: 0px 0px 15px black;
-    padding: 30px;
+    padding: 30px 0px;
     transition: .7s ease;
     position: fixed;
     z-index: 2;
-    width: 97%;
+    width: 100%;
     top: 0;
     left: 0;
 }
 header.rolagem {
     position: fixed;
-    padding: 10px 30px;
+    padding: 10px 0px;
     background-color: #ffffffef;
 }
 header.rolagem span {
@@ -123,7 +123,8 @@ header.rolagem span {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 40vw;
 }
 header h1 {
     color: var(--color-2);
@@ -313,7 +314,7 @@ footer a {
 @media (max-width: 450px) {
     header {
         width: 100%;
-        padding: 5px;
+        padding: 10px 0px;
         align-items: center;
         transition: all .6s ease;
     }
@@ -329,13 +330,14 @@ footer a {
         width: 70px;
         }
     header.rolagem {
-        padding: 0px 3px;
+        padding: 3px 0px;
     }
     header h1 {
         display: none;
     }
     nav {
         justify-content: space-around;
+        gap: 0;
     }
     main {
         display: flex;
@@ -422,6 +424,7 @@ footer a {
     nav {
         display: flex;
         justify-content: space-around;
+        gap: 0;
     }
     header h1 {
         display: none;
@@ -438,13 +441,15 @@ footer a {
         padding: 15vw 0px;
     }
     .TEXTO {
-        backdrop-filter: blur(6px);
+        backdrop-filter: blur(3px);
     }
     .TEXTO h1{
         margin-top: 3vw;
+        font-size: 2rem;
     }
     .TEXTO h3{
         max-width: 55vw;
+        font-size: 1.3rem;
     }
     .SOBRE {
         margin-top: 22vw;

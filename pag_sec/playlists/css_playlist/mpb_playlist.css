@@ -370,4 +370,8 @@ footer a {
     nav {
         justify-content: space-between;
     }
+    header h1 {
+        display: flex;
+        left: 290px;
+    }
 }
