@@ -491,6 +491,7 @@ footer a {
     nav {
         display: flex;
         justify-content: space-around;
+        gap: 0;
     }
     header h1 {
         display: none;

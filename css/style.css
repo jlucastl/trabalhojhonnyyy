@@ -721,6 +721,10 @@ font-weight: 600;
   .IMAGEM_CONV img {
   width: 350px;
 }
+#CDE:hover {
+ right: 110px;
+}
+
 .CONTEUDO {
   margin-left: 2rem;
 }

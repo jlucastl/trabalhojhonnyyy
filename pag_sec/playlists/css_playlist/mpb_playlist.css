@@ -342,6 +342,7 @@ footer a {
     }
     nav {
         justify-content: space-around;
+        gap: 0;
     }
     .main1 {
         width: 100%;
@@ -368,7 +369,8 @@ footer a {
         margin-top: 15vw;
     }
     nav {
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 40vw;
     }
     header h1 {
         display: flex;
