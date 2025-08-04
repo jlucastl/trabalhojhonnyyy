@@ -110,7 +110,8 @@ header.rolagem {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 40vw;
 }
 header h1 {
     color: white;
@@ -335,6 +336,7 @@ footer a {
     }
     nav {
         justify-content: space-around;
+        gap: 0;
     }
     header h1 {
         display: none;
@@ -471,6 +473,7 @@ footer a {
     }
     nav {
         justify-content: space-around;
+        gap: 0;
     }
     .SECAO_1 img {
         position: relative;
